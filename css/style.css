@@ -165,7 +165,7 @@ h2 {
     }
 }
 
-.navbar.fixedNav .navbar-brand{
+.navbar.fixedNav .navbar-brand {
     width: 140px;
 }
 
@@ -231,7 +231,6 @@ h2 {
 /*games css starts*/
 #games {
     background: #0b001b;
-    /* margin-top: -80px; */
     padding-bottom: 98px;
     position: relative;
 }
@@ -525,7 +524,6 @@ h2 {
 }
 
 #questions .questions-part .accordion .box .content {
-    /* padding-top: 20px; */
     height: 0;
     overflow: hidden;
     overflow-y: auto;
@@ -753,13 +751,6 @@ h2 {
     font-weight: 400;
     line-height: 54px;
 }
-
-
-
-
-
-
-
 
 /*footer css ends*/
 

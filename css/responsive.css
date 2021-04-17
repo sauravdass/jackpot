@@ -72,7 +72,7 @@
         animation: unset;
     }
 
-    .navbar .navbar-brand{
+    .navbar .navbar-brand {
         width: 140px;
         padding-top: 0;
     }
@@ -82,14 +82,14 @@
         padding-bottom: 30px;
     }
 
-    .navbar .navbar-nav li:last-of-type{
+    .navbar .navbar-nav li:last-of-type {
         margin-top: 20px;
     }
-    
+
     .navbar .navbar-nav .nav-item .nav-link {
         color: #fff;
     }
-    
+
     .navbar .navbar-nav .nav-item .nav-link:hover {
         color: var(--cl3);
     }
@@ -139,7 +139,7 @@
         margin-bottom: 40px;
     }
 
-    #games .section-header h2{
+    #games .section-header h2 {
         font-size: 36px;
     }
 
