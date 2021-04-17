@@ -1,0 +1,310 @@
+/* large device starts */
+@media (max-width: 1199.98px) {
+    .navbar .navbar-nav .nav-item {
+        margin: 0 15px;
+    }
+
+    .navbar .navbar-nav li button.btn {
+        font-size: 20px;
+        padding: 0 20px;
+        line-height: 40px;
+    }
+
+    #about .img-part {
+        width: 50%;
+    }
+
+    #about .text-part {
+        width: 50%;
+    }
+
+    #about .text-part .content h1 {
+        font-size: 290px;
+    }
+
+    #spin .img-part {
+        padding-right: 40px;
+    }
+
+
+    #spin .text-part {
+        padding-top: 20px;
+    }
+
+    #spin .text-part h2 {
+        margin-bottom: 25px;
+    }
+
+    #spin .text-part p:last-of-type {
+        margin-bottom: 36px;
+    }
+
+    #questions .questions-part .accordion .box label {
+        font-size: 17px;
+    }
+
+    #questions .questions-part .accordion .box label i {
+        right: 20px;
+    }
+
+    #questions .questions-part .accordion .box.dropDown .content {
+        height: 148px;
+    }
+
+    #questions .questions-part .accordion .box .content p {
+        font-size: 14px;
+    }
+
+    #questions .tournament .timer .hour,
+    #questions .tournament .timer .min,
+    #questions .tournament .timer .sec {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+}
+
+/* large device ends */
+
+/* medium device starts */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: var(--gradient);
+        animation: unset;
+    }
+
+    .navbar .navbar-brand{
+        width: 140px;
+        padding-top: 0;
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .navbar .navbar-nav li:last-of-type{
+        margin-top: 20px;
+    }
+    
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: #fff;
+    }
+    
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+        color: var(--cl3);
+    }
+
+    #about {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    #about .img-part {
+        width: 100%;
+        text-align: center;
+    }
+
+    #about .img-part img {
+        width: 70% !important;
+    }
+
+    #about .text-part {
+        width: 100%;
+    }
+
+    #about .text-part .content {
+        margin-left: 0;
+        padding: 0 30px;
+    }
+
+    #about .text-part .content h1 {
+        margin-top: -40px;
+    }
+
+    #games {
+        padding-bottom: 60px;
+    }
+
+    #games .no-gutters {
+        transform: translateY(10%);
+        width: 100%;
+        margin: auto;
+        top: -15%;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+
+    #games .section-header {
+        margin-top: 130px;
+        margin-bottom: 40px;
+    }
+
+    #games .section-header h2{
+        font-size: 36px;
+    }
+
+    #spin {
+        padding-top: 40px;
+    }
+
+    #spin .img-part {
+        text-align: center;
+    }
+
+    #spin .img-part img {
+        width: 80% !important;
+    }
+
+    #spin .text-part h2 {
+        font-size: 36px;
+    }
+
+    #pricing {
+        padding-top: 60px;
+    }
+
+    #pricing .section-header {
+        margin-bottom: 60px;
+    }
+
+    #pricing .section-header h2 {
+        font-size: 36px;
+    }
+
+    #pricing .last-box {
+        margin-top: 90px;
+    }
+
+    #questions .section-header h2 {
+        font-size: 30px;
+    }
+
+    #questions .questions-part .accordion .box label i {
+        right: 0;
+    }
+
+    #questions .tournament .timer {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #questions .tournament .timer .time-intro {
+        position: static;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #questions .tournament .players .participant img {
+        transform: translateX(100%);
+    }
+
+    #payment .section-header h2 {
+        font-size: 24px;
+    }
+
+    #payment .payment-part ul li {
+        width: 60px;
+        margin-right: 6px;
+    }
+
+    #contact .section-header h2 {
+        font-size: 24px;
+    }
+
+    #contact .jackpot p {
+        margin-bottom: 20px;
+    }
+}
+
+/* medium device ends */
+
+/* small device starts */
+@media (max-width: 767.98px) {
+    .btn {
+        padding: 0 20px;
+        line-height: 40px;
+    }
+
+    #games .no-gutters .box {
+        padding: 15px 0;
+    }
+
+    #games .no-gutters .box h2 {
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+
+    #games .no-gutters .box h4 {
+        font-size: 26px;
+    }
+
+    #games .no-gutters .box p {
+        font-size: 14px;
+    }
+
+    #pricing .middle-box {
+        margin-top: 90px;
+    }
+
+    #pricing .price-box a.btn {
+        bottom: -21px;
+    }
+
+    #questions {
+        padding: 60px 0;
+    }
+
+    #questions .section-header h2 {
+        text-align: center;
+    }
+
+    #questions .tournament {
+        margin-top: 50px;
+    }
+
+    #payment .payment-part ul li {
+        width: 75px;
+        margin-right: 20px;
+    }
+}
+
+/* small device ends */
+
+/* extra small device starts */
+@media (max-width: 575.98px) {
+    .navbar .navbar-brand {
+        margin-left: 25px;
+    }
+
+    .navbar .navbar-toggler {
+        margin-right: 25px;
+    }
+
+    .navbar .navbar-toggler span {
+        font-size: 20px;
+    }
+
+    #about .text-part .content h1 {
+        font-size: 200px;
+        margin-top: -25px;
+        margin-bottom: -15px;
+    }
+
+    #questions .tournament .players .participant {
+        padding-left: 20px;
+    }
+
+    #questions .tournament .players .participant span.price {
+        right: 15px;
+    }
+
+    #contact .jackpot ul li a {
+        padding: 0 15px;
+    }
+
+    #footer p {
+        font-size: 14px;
+    }
+}
+
+/* extra small device ends */
