@@ -40,7 +40,6 @@ $(document).ready(function () {
     let logo = $('.navbar .navbar-brand');
     let menu = $('.navbar');
     let html_body = $('html,body');
-    // let logo = $('');
 
     $(window).on('scroll', function () {
         let scrolling = $(window).scrollTop();
@@ -90,6 +89,178 @@ $(document).ready(function () {
         }
     });
 
-
-
 });
+
+
+// javaScript code starts here//
+
+//signup form validation starts
+// variable declaration
+let firstName = document.getElementById('firstName');
+let lastName = document.getElementById('lastName');
+let email = document.getElementById('email');
+let pass = document.getElementById('pass');
+let confirmPass = document.getElementById('cPass');
+let fnameErr = document.getElementById('fnameErr');
+let lnameErr = document.getElementById('lnameErr');
+let emailErr = document.getElementById('emailErr');
+let passErr = document.getElementById('passErr');
+let confirmPassErr = document.getElementById('cPassErr');
+let submitBtn = document.getElementById('submitBtn');
+let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+
+function signValidation(){
+    //First Name
+    if(firstName.value == ""){
+        firstName.style.border = "2px solid red";
+        fnameErr.innerHTML = "please enter your first name";
+        firstName.focus();
+        return false;
+    }
+    //Last Name
+    if(lastName.value == ""){
+        lastName.style.border = "2px solid red";
+        lnameErr.innerHTML = "please enter your last name";
+        lastName.focus();
+        return false;
+    }
+    //email
+    if(email.value == ""){
+        email.style.border = "2px solid red";
+        emailErr.innerHTML = "please enter your email";
+        email.focus();
+        return false;
+    }
+    //email validation with regular expression
+    if(email.value.match(pattern)){
+        
+    }
+    else{
+        email.style.border = "2px solid red";
+        emailErr.innerHTML = "please enter valid email";
+        email.focus();
+        return false;
+    }
+
+    //password
+    if(pass.value == ""){
+        pass.style.border = "2px solid red";
+        passErr.innerHTML = "please enter your password";
+        pass.focus();
+        return false;
+    }
+    
+    if(pass.value.length < 6){
+        pass.style.border = "2px solid red";
+        passErr.innerHTML = "(please enter at least 6 digits password)";
+        pass.focus();
+        return false;
+    }
+    //confirm password
+    if(confirmPass.value != pass.value){
+        confirmPass.style.border = "2px solid red";
+        confirmPassErr.innerHTML = "password not matched!!";
+        confirmPass.focus();
+        return false;
+    }
+}
+
+function errValid(){
+    //First Name
+    if(firstName.value != ""){
+        firstName.style.borderColor = "#5f27cd";
+        fnameErr.innerHTML = "";
+    }
+    //Last Name
+    if(lastName.value != ""){
+        lastName.style.borderColor = "#5f27cd";
+        lnameErr.innerHTML = "";
+    }
+    //email
+    if(email.value != ""){
+        email.style.borderColor = "#5f27cd";
+        emailErr.innerHTML = "";
+    }
+    //password
+    if(pass.value != ""){
+        pass.style.borderColor = "#5f27cd";
+        passErr.innerHTML = "";
+    }
+    //confirm password
+    if(confirmPass.value != ""){
+        confirmPass.style.borderColor = "#5f27cd";
+        confirmPassErr.innerHTML = "";
+    }
+}
+
+firstName.onblur = errValid;
+lastName.onblur = errValid;
+email.onblur = errValid;
+pass.onblur = errValid;
+confirmPass.onblur = errValid;
+//signup form validation ends
+
+/////////
+
+//login form validation starts
+// variable declaration
+let logEmail = document.getElementById('logEmail');
+let logPassword = document.getElementById('logPassword');
+let logEmailErr = document.getElementById('logEmailErr');
+let logPasswordErr = document.getElementById('logPasswordErr');
+let loginBtn = document.getElementById('loginBtn');
+
+
+function logValidation(){
+    //email
+    if(logEmail.value == ""){
+        logEmail.style.border = "2px solid red";
+        logEmailErr.innerHTML = "please enter your email";
+        logEmail.focus();
+        return false;
+    }
+    //email validation with regular expression
+    if(logEmail.value.match(pattern)){
+        
+    }
+    else{
+        logEmail.style.border = "2px solid red";
+        logEmailErr.innerHTML = "please enter valid email";
+        logEmail.focus();
+        return false;
+    }
+
+    //password
+    if(logPassword.value == ""){
+        logPassword.style.border = "2px solid red";
+        logPasswordErr.innerHTML = "please enter your password";
+        logPassword.focus();
+        return false;
+    }
+    
+    if(logPassword.value.length < 6){
+        logPassword.style.border = "2px solid red";
+        logPasswordErr.innerHTML = "(please enter at least 6 digits password)";
+        logPassword.focus();
+        return false;
+    }
+}
+
+function loginErrValid(){
+    //email
+    if(logEmail.value != ""){
+        logEmail.style.borderColor = "#5f27cd";
+        logEmailErr.innerHTML = "";
+    }
+    //password
+    if(logPassword.value != ""){
+        logPassword.style.borderColor = "#5f27cd";
+        logPasswordErr.innerHTML = "";
+    }
+}
+
+logEmail.onblur = errValid;
+logPassword.onblur = errValid;
+//login form validation ends
+

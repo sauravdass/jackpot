@@ -52,16 +52,86 @@
                         <a class="nav-link text-uppercase" href="#questions">faq</a>
                     </li>
                     <li>
-                        <button class="btn">signup</button>
+                        <button class="btn" data-toggle="modal" data-target="#signupModal">signup</button>
                     </li>
                     <li>
-                        <button class="btn">login</button>
+                        <button class="btn" data-toggle="modal" data-target="#loginModal">login</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- navbar ends -->
+
+    <!-- signup modal starts -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" id="exampleModalLabel">signup</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" id="firstName" placeholder="First Name" class="form-control">
+                            <small id="fnameErr" class=""></small>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" placeholder="Last Name" class="form-control">
+                            <small id="lnameErr"></small>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your E-mail" class="form-control">
+                            <small id="emailErr"></small>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="pass" placeholder="Password" class="form-control">
+                            <small id="passErr"></small>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="cPass" placeholder="Confirm Password" class="form-control">
+                            <small id="cPassErr"></small>
+                        </div>
+                        <button type="submit" class="btn w-100" id="submitBtn" onclick="return signValidation()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- signup modal ends -->
+
+    <!-- login modal starts -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" id="exampleModalLabel">login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="email" id="logEmail" placeholder="Your E-mail" class="form-control">
+                            <small id="logEmailErr"></small>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="logPassword" placeholder="Password" class="form-control">
+                            <small id="logPasswordErr"></small>
+                        </div>
+                        <button type="submit" class="btn w-100" id="loginBtn" onclick="return logValidation()">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login modal ends -->
 
     <!-- about starts -->
     <section id="about" class="d-flex">

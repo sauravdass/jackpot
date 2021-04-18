@@ -2,8 +2,17 @@
 === Table of content ===
 
 1.common css
-
-
+2.navbar css
+3.modal css
+4.about css
+5.games css
+6.spin css
+7.pricing css
+8.questions css
+9.payment css
+10.contact css
+11.footer css
+12.backToTop css
 
 */
 
@@ -178,6 +187,26 @@ h2 {
 }
 
 /*navbar css ends*/
+
+/*modal css starts*/
+.modal .modal-title{
+    font-size: 28px;
+    font-family: var(--nunito);
+    font-weight: 700;
+}
+
+
+.modal .modal-body form .form-group input{
+    font-family: var(--nunito);
+    font-weight: 400;
+    outline: none;
+}
+
+.modal .modal-body form .form-group small{
+    color: red;
+}
+
+/*modal css ends*/
 
 /*about css starts*/
 #about {
