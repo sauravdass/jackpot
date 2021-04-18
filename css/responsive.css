@@ -97,12 +97,13 @@
     #about {
         flex-wrap: wrap;
         text-align: center;
+        padding-top: 100px;
         padding-bottom: 80px;
     }
 
     #about .img-part {
-        width: 100%;
-        text-align: center;
+        width: 80%;
+        margin: 0 auto;
     }
 
     #about .img-part img {
