@@ -85,6 +85,13 @@ h2 {
     color: #fcb100;
 }
 
+.text-effect {
+    background: -webkit-linear-gradient(top, #ffce19 48%, #f5a50d 50%, #ffce19 80%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 35px rgba(175, 48, 150, 0.5);
+}
+
 /*common css ends*/
 
 /*navbar css starts*/
@@ -189,20 +196,20 @@ h2 {
 /*navbar css ends*/
 
 /*modal css starts*/
-.modal .modal-title{
+.modal .modal-title {
     font-size: 28px;
     font-family: var(--nunito);
     font-weight: 700;
 }
 
 
-.modal .modal-body form .form-group input{
+.modal .modal-body form .form-group input {
     font-family: var(--nunito);
     font-weight: 400;
     outline: none;
 }
 
-.modal .modal-body form .form-group small{
+.modal .modal-body form .form-group small {
     color: red;
 }
 
@@ -241,7 +248,10 @@ h2 {
     font-family: var(--anton);
     font-weight: 400;
     font-size: 331px;
-    text-shadow: 10px 10px 65px rgba(254, 57, 218, 0.4);
+    background: -webkit-linear-gradient(top, #fdb125 48%, #e07e1e 50%, #fdb125 80%);
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 35px rgba(175, 48, 150, 0.7));
+    -webkit-background-clip: text;
     margin-top: -47px;
     margin-left: -9px;
     margin-bottom: -32px;
@@ -282,7 +292,6 @@ h2 {
     font-size: 50px;
     margin-bottom: 18px;
     letter-spacing: 3px;
-    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 #games .no-gutters .box h4 {
@@ -796,7 +805,7 @@ h2 {
     cursor: pointer;
     color: #fff;
     display: none;
-    animation: toBottom linear .7s;
+    animation: toBottom linear .8s;
     transition: all linear 0.4s;
     -o-transition: all linear 0.4s;
     -moz-transition: all linear 0.4s;
